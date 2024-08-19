@@ -11,7 +11,7 @@ import SwiftUI
 struct ReaddleElevatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ElevatorScreen()
         }
     }
 }

@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		21CCC1782C7350B0007FE686 /* ReaddleElevatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCC1772C7350B0007FE686 /* ReaddleElevatorApp.swift */; };
-		21CCC17A2C7350B0007FE686 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCC1792C7350B0007FE686 /* ContentView.swift */; };
 		21CCC17C2C7350B1007FE686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CCC17B2C7350B1007FE686 /* Assets.xcassets */; };
 		21CCC17F2C7350B1007FE686 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CCC17E2C7350B1007FE686 /* Preview Assets.xcassets */; };
+		21CCC1862C7352E1007FE686 /* ElevatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCC1852C7352E1007FE686 /* ElevatorScreen.swift */; };
+		21CCC1892C735305007FE686 /* FloorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCC1882C735305007FE686 /* FloorView.swift */; };
+		21CCC18B2C735313007FE686 /* FloorPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCC18A2C735313007FE686 /* FloorPanelView.swift */; };
+		21CCC18D2C735349007FE686 /* ElevatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCC18C2C735349007FE686 /* ElevatorView.swift */; };
+		21CCC18F2C7359F3007FE686 /* ControlPowerUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCC18E2C7359F3007FE686 /* ControlPowerUnitView.swift */; };
+		21CCC1932C735B60007FE686 /* ElevatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCC1922C735B60007FE686 /* ElevatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21CCC1742C7350B0007FE686 /* ReaddleElevator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaddleElevator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CCC1772C7350B0007FE686 /* ReaddleElevatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaddleElevatorApp.swift; sourceTree = "<group>"; };
-		21CCC1792C7350B0007FE686 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21CCC17B2C7350B1007FE686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21CCC17E2C7350B1007FE686 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21CCC1852C7352E1007FE686 /* ElevatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorScreen.swift; sourceTree = "<group>"; };
+		21CCC1882C735305007FE686 /* FloorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorView.swift; sourceTree = "<group>"; };
+		21CCC18A2C735313007FE686 /* FloorPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPanelView.swift; sourceTree = "<group>"; };
+		21CCC18C2C735349007FE686 /* ElevatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorView.swift; sourceTree = "<group>"; };
+		21CCC18E2C7359F3007FE686 /* ControlPowerUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPowerUnitView.swift; sourceTree = "<group>"; };
+		21CCC1922C735B60007FE686 /* ElevatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		21CCC1762C7350B0007FE686 /* ReaddleElevator */ = {
 			isa = PBXGroup;
 			children = (
+				21CCC1902C735B4F007FE686 /* Features */,
+				21CCC1872C7352EB007FE686 /* Components */,
 				21CCC1772C7350B0007FE686 /* ReaddleElevatorApp.swift */,
-				21CCC1792C7350B0007FE686 /* ContentView.swift */,
 				21CCC17B2C7350B1007FE686 /* Assets.xcassets */,
 				21CCC17D2C7350B1007FE686 /* Preview Content */,
 			);
@@ -65,6 +76,34 @@
 				21CCC17E2C7350B1007FE686 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21CCC1872C7352EB007FE686 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				21CCC1882C735305007FE686 /* FloorView.swift */,
+				21CCC18E2C7359F3007FE686 /* ControlPowerUnitView.swift */,
+				21CCC18A2C735313007FE686 /* FloorPanelView.swift */,
+				21CCC18C2C735349007FE686 /* ElevatorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		21CCC1902C735B4F007FE686 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				21CCC1912C735B54007FE686 /* Elevator */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		21CCC1912C735B54007FE686 /* Elevator */ = {
+			isa = PBXGroup;
+			children = (
+				21CCC1852C7352E1007FE686 /* ElevatorScreen.swift */,
+				21CCC1922C735B60007FE686 /* ElevatorViewModel.swift */,
+			);
+			path = Elevator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21CCC17A2C7350B0007FE686 /* ContentView.swift in Sources */,
+				21CCC1862C7352E1007FE686 /* ElevatorScreen.swift in Sources */,
 				21CCC1782C7350B0007FE686 /* ReaddleElevatorApp.swift in Sources */,
+				21CCC18F2C7359F3007FE686 /* ControlPowerUnitView.swift in Sources */,
+				21CCC18B2C735313007FE686 /* FloorPanelView.swift in Sources */,
+				21CCC1892C735305007FE686 /* FloorView.swift in Sources */,
+				21CCC1932C735B60007FE686 /* ElevatorViewModel.swift in Sources */,
+				21CCC18D2C735349007FE686 /* ElevatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
